@@ -13,8 +13,8 @@ func main() {
 	}
 	defer f.Close()
 
-	fmt.Println("Задание на сегодня:")
-	f.WriteString("Задание на сегодня:\n")
+	fmt.Println("Tasks for today:")
+	f.WriteString("Tasks for today:\n")
 	for i := 0; i < 50; i++ {
 		num:= rand.Uint32()
 		fmt.Println(num)
